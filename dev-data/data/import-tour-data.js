@@ -36,7 +36,6 @@ const importData = async () => {
     await TourModel.create(tours, { validateBeforeSave: false });
     await UserModel.create(users, { validateBeforeSave: false });
     await ReviewModel.create(reviews);
-    console.log('Data successfully loaded!');
   } catch (err) {
     console.log(err);
   }
@@ -49,7 +48,6 @@ const deleteData = async () => {
     await TourModel.deleteMany();
     await UserModel.deleteMany();
     await ReviewModel.deleteMany();
-    console.log('Data successfully deleted!');
   } catch (err) {
     console.log(err);
   }
@@ -62,4 +60,3 @@ if (process.argv[2] === '--import') {
   deleteData();
 }
 
-console.log(process.argv);

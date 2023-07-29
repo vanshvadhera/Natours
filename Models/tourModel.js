@@ -141,12 +141,10 @@ tourSchema.pre('save', function (next) {
 });
 
 tourSchema.pre('save', (next) => {
-  console.log('Will save document...');
   next();
 });
 
 tourSchema.post('save', (doc, next) => {
-  console.log(doc);
   next();
 });
 
@@ -165,7 +163,7 @@ tourSchema.pre(/^find/, function (next) {
 });
 
 tourSchema.post(/^find/, (doc, next) => {
-  console.log(doc);
+  // console.log(doc);
   next();
 });
 
@@ -182,7 +180,6 @@ tourSchema.post(/^find/, (doc, next) => {
 // AGGREGATION MIDDLEWARE (this keyword points to the current aggregation object)
 // tourSchema.pre('aggregate', function (next) {
 //   this.pipeline().unshift({ $match: { secretTour: { $ne: true } } });
-//   console.log(this.pipeline());
 //   next();
 // });
 
