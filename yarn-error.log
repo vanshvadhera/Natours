@@ -1,0 +1,72 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add axios
+
+PATH: 
+  /Users/vanshvadhera/Documents/Vansh Laptop Recovery/NodeJS(UDEMY)/complete-node-bootcamp-master/4-natours/starter/node_modules/.bin:/Users/vanshvadhera/Documents/Vansh Laptop Recovery/NodeJS(UDEMY)/complete-node-bootcamp-master/4-natours/node_modules/.bin:/Users/vanshvadhera/Documents/Vansh Laptop Recovery/NodeJS(UDEMY)/complete-node-bootcamp-master/node_modules/.bin:/Users/vanshvadhera/Documents/Vansh Laptop Recovery/NodeJS(UDEMY)/node_modules/.bin:/Users/vanshvadhera/Documents/Vansh Laptop Recovery/node_modules/.bin:/Users/vanshvadhera/Documents/node_modules/.bin:/Users/vanshvadhera/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/opt/mongodb-community@4.4/bin:/usr/local/opt/mongodb-community@4.4/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/opt/mongodb-community@4.4/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/vanshvadhera/Documents/Vansh Laptop Recovery/NodeJS(UDEMY)/complete-node-bootcamp-master/4-natours/starter/node_modules/browserify-sign/node_modules/bn.js'
+
+npm manifest: 
+  {
+    "name": "starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon server.js",
+      "start:prod": "NODE_ENV=production nodemon server.js",
+      "watch:js": "parcel watch public/js/index.js --out-dir public/js --out-file bundle.js",
+      "build:js": "parcel watch public/js/index.js --out-dir public/js --out-file bundle.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cookie-parser": "^1.4.6",
+      "dotenv": "^16.3.1",
+      "eslint": "^8.43.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-prettier": "^8.8.0",
+      "eslint-plugin-import": "^2.27.5",
+      "eslint-plugin-jsx-a11y": "^6.7.1",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^4.2.1",
+      "eslint-plugin-react": "^7.32.2",
+      "express": "^4.18.2",
+      "express-mongo-sanitize": "^2.2.0",
+      "express-rate-limit": "^6.7.0",
+      "helmet": "^7.0.0",
+      "hpp": "^0.2.3",
+      "jsonwebtoken": "^9.0.0",
+      "mapbox-gl": "^2.15.0",
+      "mongodb": "^5.6.0",
+      "mongoose": "^5.13.19",
+      "morgan": "^1.10.0",
+      "nodemailer": "^6.9.3",
+      "prettier": "^2.8.8",
+      "pug": "^3.0.2",
+      "slugify": "^1.6.6",
+      "validator": "^13.9.0",
+      "xss-clean": "^0.1.4"
+    },
+    "devDependencies": {
+      "parcel-bundler": "^1.12.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
