@@ -11,22 +11,28 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
-mongoose.connect(DB, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
   })
   .then(() => console.log('DB connection successful!'))
   .catch((err) => console.log(err));
 
-app.listen(3000, () => {
-
+const port = process.env.PORT || 3000;
+const server = app.listen(port, () => {
+  console.log(`App running on port ${port}...`);
 });
 
 process.on('unhandledRejection', (err) => {
-  process.exit(1);
+  server.close(() => {
+    process.exit(1);
+  });
 });
 
 process.on('uncaughtException', (err) => {
-  process.exit(1);
+  server.close(() => {
+    process.exit(1);
+  });
 });
